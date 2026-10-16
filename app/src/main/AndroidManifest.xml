@@ -1,6 +1,7 @@
 
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
     <application
         android:label="Sabbir Keyboard"
         android:allowBackup="false"
@@ -20,5 +21,6 @@
                 android:name="android.view.im"
                 android:resource="@xml/method" />
         </service>
+
     </application>
 </manifest>
