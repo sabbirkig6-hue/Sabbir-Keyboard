@@ -24,10 +24,11 @@ jobs:
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
 
-      - name: Build APK
-        run: gradle assembleDebug
+      - name: Build APK with detailed errors
+        run: gradle assembleDebug --stacktrace --info
 
       - name: Upload APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: Sabbir-Keyboard-APK
